@@ -180,14 +180,18 @@ form label {
     <p class="mb-4 fs-5">Join the pilot group and help shape the future of care staff coordination.</p>
     
     <div class="bg-white text-dark p-4 p-md-5 rounded shadow mx-auto" style="max-width: 500px;">
-<form name="waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+<form name="waitlist" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thank-you.html">
   <input type="hidden" name="form-name" value="waitlist" />
   <p class="d-none">
     <label>Don’t fill this out: <input name="bot-field" /></label>
   </p>
-  <div class="mb-3 text-start">
+<div class="mb-3 text-start">
     <label for="name" class="form-label fw-semibold">Your Name</label>
     <input type="text" name="name" class="form-control form-control-lg" id="name" required />
+  </div>
+  <div class="mb-3 text-start">
+    <label for="carehome" class="form-label fw-semibold">Care Home Name</label>
+    <input type="text" name="carehome" class="form-control form-control-lg" id="carehome" required />
   </div>
   <div class="mb-4 text-start">
     <label for="email" class="form-label fw-semibold">Your Work Email</label>
